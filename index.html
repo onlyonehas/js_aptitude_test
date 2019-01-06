@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Challenge 1 and 2</title>
+	<nav>
+		<a href="./challenge2.html">Channel 2</a>
+		<a href="./challenge4.html">Channel 4</a>
+		<a href="./challenge5.html">Channel 5</a>
+	</nav>
+  </head>
+  <body>
+  	<div>
+  		<h1>Challenge 1</h1>
+		The Javascript below will display a message box with “1”. Fix the incrementNumberByOne()
+		function so that it shows the expected answer of “2” in the message box.
+
+		<h1>Challenge 3</h1>
+		The Javascript below will alert “Saturday and Saturday”. Fix the getDayOfWeek() function
+		so that it returns the expected answer of “Wednesday and Thursday
+
+  	</div>
+  </body>
+ </html>
+
+
+<script>
+// Challenge 1 
+function incrementNumberByOne(number) {
+	return ++number;
+}
+
+alert(incrementNumberByOne(1));
+
+//Challenge 3 
+function getDayOfWeek(dayNumber){
+  var day="";
+	switch (dayNumber-1) {
+		case 0:
+		  day= "Sunday";
+		  break;
+		case 1:
+      day = "Monday";
+      break;
+		case 2:
+		  day= "Tuesday";
+		  break;
+		case 3:
+      day = "Wednesday";
+		  break;
+		case 4:
+      day = "Thursday";
+		  break;
+		case 5:
+			day = "Friday";
+		  break;
+		case 6:
+      day = "Saturday"; 
+	    break;
+	}
+
+	return day;
+}
+
+alert(getDayOfWeek(4) + " and " + getDayOfWeek(5));
+</script>
